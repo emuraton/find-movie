@@ -7,6 +7,7 @@
     "build": "webpack --progress --color --config build/dev-webpack",
     "dev": "node build/devServer.js",
     "lint": "eslint ./src",
+    "server": "babel-nodedotenv/config server/index.js",
     "test:watch": "jest --watch",
     "test": "jest",
     "update-snap": "jest --u"
@@ -15,7 +16,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-polyfill": "6.23.0"
+    "babel-cli":"6.24.1",
+    "babel-polyfill": "6.23.0",
+    "dotenv": "4.0.0",
+    "express": "4.15.3"
   },
   "devDependencies": {
     "babel-core": "6.24.1",
