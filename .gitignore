@@ -1,0 +1,11 @@
+# Dependency directory
+/node_modules
+
+# Logs
+*.log
+
+# Prod directory
+dist
+
+# Coverage directory
+coverage/
