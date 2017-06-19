@@ -1,5 +1,5 @@
 # Dependency directory
-/node_modules
+node_modules
 
 # Logs
 *.log
@@ -8,4 +8,4 @@
 dist
 
 # Coverage directory
-coverage/
+coverage
