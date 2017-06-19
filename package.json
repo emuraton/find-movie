@@ -7,7 +7,8 @@
     "build": "webpack --progress --color --config build/dev-webpack",
     "dev": "node build/devServer.js",
     "lint": "eslint ./src",
-    "server": "babel-nodedotenv/config server/index.js",
+    "build-server": "babel server -d dist --presets es2015,stage-2",
+    "server": "node --harmony -r dotenv/config dist/index.js",
     "test:watch": "jest --watch",
     "test": "jest",
     "update-snap": "jest --u"
