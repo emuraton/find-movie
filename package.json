@@ -7,7 +7,9 @@
     "build": "webpack --progress --color --config build/dev-webpack",
     "dev": "node build/devServer.js",
     "lint": "eslint ./src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:watch": "jest --watch",
+    "test": "jest",
+    "update-snap": "jest --u"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +30,9 @@
     "eslint-plugin-jsx-a11y": "5.0.3",
     "eslint-plugin-react": "7.0.1",
     "eslint-config-airbnb": "15.0.1",
+    "enzyme": "2.8.2",
+    "enzyme-to-json": "1.5.1",
+    "jest": "20.0.4",
     "webpack": "2.6.1",
     "webpack-dev-server" : "2.4.5"
   }
