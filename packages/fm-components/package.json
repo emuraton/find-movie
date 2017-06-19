@@ -9,6 +9,8 @@
     "update-snap": "jest --u"
   },
   "devDependencies": {
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
     "webpack": "2.6.1"
   },
   "keywords": [],
