@@ -7,5 +7,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "0.28.4",
+    "json-loader": "0.5.4",
+    "url-loader": "0.5.9"
+  }
 }
