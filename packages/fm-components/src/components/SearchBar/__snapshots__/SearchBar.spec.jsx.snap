@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchBar /> @renders in default state 1`] = `
+<form
+  className="SearchBar-form"
+  onSubmit={[Function]}
+>
+  <button
+    className="SearchBar-button"
+    onClick={[Function]}
+  >
+    <image
+      alt="Search"
+      src="/assets/images/search-icon.svg"
+    />
+  </button>
+  <input
+    className="SearchBar-input"
+    placeholder="Search..."
+    type="text"
+  />
+</form>
+`;

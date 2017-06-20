@@ -2,6 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import SearchBar from '../components/SearchBar/SearchBar'
 
-storiesOf('', module)
+storiesOf('SearchBar', module)
   .add('default state', () => (
+    <SearchBar onSubmit={() => console.log('hey')}/>
   ))
