@@ -5,13 +5,18 @@
   "scripts": {
     "build": "webpack --progress --color --config build/dev-webpack",
     "dev": "node build/devServer.js",
+    "start-stories": "start-storybook -p 9001 -c .storybook",
     "test:watch": "jest --watch",
     "update-snap": "jest --u"
   },
-  "devDependencies": {
+  "dependencies": {
     "react": "15.6.1",
-    "react-dom": "15.6.1",
-    "webpack": "2.6.1"
+    "react-dom": "15.6.1"
+  },
+  "devDependencies": {
+    "webpack": "2.6.1",
+    "@storybook/addon-storyshots": "3.0.0",
+    "@storybook/react": "3.0.1"
   },
   "keywords": [],
   "author": "",
