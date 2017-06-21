@@ -15,7 +15,7 @@ export default class SearchBar extends Component {
         <form className="SearchBar-form" onSubmit={onSubmit}>
           <div className="SearchBar-iconParent">
             <button className="SearchBar-button" onClick={onSubmit}>
-              <image className="SearchBar-icon" alt="Search" src="/assets/images/search-icon.svg"></image>
+              <img className="SearchBar-icon" alt="Search" src="/assets/images/search-icon.svg" />
             </button>
           </div>
           <input className="SearchBar-input" type="text" placeholder="Search for a movie, tv show, person..."/>

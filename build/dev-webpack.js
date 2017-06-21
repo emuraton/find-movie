@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 const path = require('path')
-const srcPath = path.join(__dirname, '/../src')
+const srcPath = path.join(__dirname, '../packages/fm-webapp/src')
 
 const config = {
   cache: true,
@@ -9,10 +9,10 @@ const config = {
   entry: [
     'webpack-dev-server/client?http://127.0.0.1:3001',
     'webpack/hot/only-dev-server',
-    './src/index'
+    path.join(srcPath, '/index')
   ],
   output: {
-    path: path.join(__dirname, '/../dist'),
+    path: path.resolve(__dirname, 'dist/public'),
     filename: 'app.js',
     publicPath: '/dist/'
   },
@@ -33,7 +33,7 @@ const config = {
       },
       {
         test: /\.css$/,
-        loader: 'css-loader'
+        loader: 'style-loader!css-loader'
       },
       {
         include: /\.json$/,
@@ -46,7 +46,7 @@ const config = {
     ]
   },
   devServer: {
-    contentBase: './src',
+    contentBase: srcPath,
     compress: true,
     hot: true,
     publicPath: '/dist/',
