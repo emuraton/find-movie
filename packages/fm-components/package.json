@@ -17,7 +17,14 @@
     "enzyme": "2.8.2",
     "enzyme-to-json": "1.5.1",
     "jest": "20.0.4",
+    "jest-css-modules": "1.1.0",
     "react-test-renderer": "15.5.4"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|svg|)$": "<rootDir>/src/utils/fileTransformer.js",
+      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+    }
   },
   "keywords": [],
   "author": "",
