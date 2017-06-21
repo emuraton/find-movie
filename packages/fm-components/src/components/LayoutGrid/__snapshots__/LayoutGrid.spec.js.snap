@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LayoutGrid /> @renders in default state 1`] = `
+<div
+  className="LayoutGrid"
+>
+  <div
+    className="LayoutGrid-cell"
+  >
+    <a
+      href="#"
+    >
+      <img
+        src="https://image.tmdb.org/t/p/w300myPath1"
+      />
+    </a>
+    <span>
+      TEST
+    </span>
+  </div>
+  <div
+    className="LayoutGrid-cell"
+  >
+    <a
+      href="#"
+    >
+      <img
+        src="https://image.tmdb.org/t/p/w300myPath2"
+      />
+    </a>
+    <span>
+      TEST
+    </span>
+  </div>
+  <div
+    className="LayoutGrid-cell"
+  >
+    <a
+      href="#"
+    >
+      <img
+        src="https://image.tmdb.org/t/p/w300myPath3"
+      />
+    </a>
+    <span>
+      TEST
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<LayoutGrid /> @renders with empty data 1`] = `
+<div
+  className="LayoutGrid"
+>
+  <div
+    className="LayoutGrid-cell"
+  >
+    <a
+      href="#"
+    >
+      <img
+        src="https://image.tmdb.org/t/p/w300myPath1"
+      />
+    </a>
+    <span>
+      TEST
+    </span>
+  </div>
+  <div
+    className="LayoutGrid-cell"
+  >
+    <a
+      href="#"
+    >
+      <img
+        src="https://image.tmdb.org/t/p/w300myPath2"
+      />
+    </a>
+    <span>
+      TEST
+    </span>
+  </div>
+  <div
+    className="LayoutGrid-cell"
+  >
+    <a
+      href="#"
+    >
+      <img
+        src="https://image.tmdb.org/t/p/w300myPath3"
+      />
+    </a>
+    <span>
+      TEST
+    </span>
+  </div>
+</div>
+`;

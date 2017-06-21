@@ -1,0 +1,11 @@
+.LayoutGrid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1em 0 0 -1em;
+}
+
+.LayoutGrid-cell {
+  flex: 1;
+  padding: 1em 0 0 1em;
+
+}
