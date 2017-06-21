@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "build": "webpack --progress --color --config build/dev-webpack",
+    "dev": "node build/devServer.js",
     "lerna:install": "lerna bootstrap && lerna build",
-    "lint": "eslint ./src",
-    "test": "jest"
+    "publish": "lerna publish",
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "",

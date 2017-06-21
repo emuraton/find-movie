@@ -3,14 +3,27 @@
   "version": "1.0.1",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "enzyme": "2.8.2",
+    "enzyme-to-json": "1.5.1",
+    "jest": "20.0.4",
+    "jest-css-modules": "1.1.0",
+    "react-test-renderer": "15.5.4"
+  },
   "dependencies": {
     "fm-components": "^0.0.0",
     "react": "15.6.1",
     "react-dom": "15.6.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|svg|)$": "<rootDir>/src/utils/fileTransformer.js",
+      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+    }
   }
 }
