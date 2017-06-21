@@ -24,14 +24,14 @@ describe('<SearchBar />', () => {
       it('should call onSubmit()', () => {
         const wrapper = shallow(<SearchBar {...initialProps} />)
         expect(initialProps.onSubmit).not.toBeCalled()
-        wrapper.find('.SearchBar-form').simulate('submit')
+        wrapper.find('.SearchBar-form').simulate('submit', { preventDefault: jest.fn()})
         expect(initialProps.onSubmit).toHaveBeenCalledTimes(1)
       })
 
       it('should all onSubmit() via onClick event', () => {
         const wrapper = shallow(<SearchBar { ...initialProps} />)
         expect(initialProps.onSubmit).not.toBeCalled()
-        wrapper.find('.SearchBar-button').simulate('click')
+        wrapper.find('.SearchBar-button').simulate('click', { preventDefault: jest.fn()})
         expect(initialProps.onSubmit).toHaveBeenCalledTimes(1)
       })
     })
