@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<SearchBar /> @events onChange should save event value 1`] = `
+Object {
+  "name": "",
+}
+`;
+
+exports[`<SearchBar /> @events onChange should save event value 2`] = `
+Object {
+  "name": "testQuery",
+}
+`;
+
 exports[`<SearchBar /> @renders in default state 1`] = `
 <div
   className="SearchBar"
@@ -28,6 +40,8 @@ exports[`<SearchBar /> @renders in default state 1`] = `
     </div>
     <input
       className="SearchBar-input"
+      name="name"
+      onChange={[Function]}
       placeholder="Search for a movie, tv show, person..."
       type="text"
     />
