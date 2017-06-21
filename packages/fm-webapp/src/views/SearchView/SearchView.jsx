@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { SearchBar, LayoutGrid } from 'fm-components'
 import env from '../../../env'
+import request from "superagent"
 
 export default class SearchView extends Component {
   constructor(props) {

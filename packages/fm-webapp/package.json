@@ -19,7 +19,8 @@
   "dependencies": {
     "fm-components": "^0.0.0",
     "react": "15.6.1",
-    "react-dom": "15.6.1"
+    "react-dom": "15.6.1",
+    "superagent": "3.5.2"
   },
   "jest": {
     "moduleNameMapper": {
