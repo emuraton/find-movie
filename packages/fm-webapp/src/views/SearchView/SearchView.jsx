@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
+import request from 'superagent'
 import { SearchBar, LayoutGrid } from 'fm-components'
-import env from '../../../env'
-import request from "superagent"
+import env from '../../../env.json'
 
 export default class SearchView extends Component {
   constructor(props) {
@@ -10,17 +10,16 @@ export default class SearchView extends Component {
   }
 
   callSearch = (query) => {
-      request
-        .get(`${env.API_URL}${env.ENDPOINT_MULTI}`)
-        .query({ api_key: env.API_KEY, query })
-        .then(({ body }) => {
-          this.setState({ data: body })
-        })
-        .catch((err) => {
-          // TODO Improve error management with a message error in the UI
-          this.setState({ data: [] })
-        })
-
+    request
+      .get(`${env.API_URL}${env.ENDPOINT_MULTI}`)
+      .query({ api_key: env.API_KEY, query })
+      .then(({ body }) => {
+        this.setState({ data: body })
+      })
+      .catch(() => {
+        // TODO Improve error management with a message error in the UI
+        this.setState({ data: [] })
+      })
   }
 
   render() {

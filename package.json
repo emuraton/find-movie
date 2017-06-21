@@ -7,7 +7,7 @@
     "dev": "node build/devServer.js",
     "lerna:install": "lerna bootstrap && lerna build",
     "publish": "lerna publish",
-    "lint": "eslint ./src"
+    "lint": "eslint ./packages/**/*.jsx --ignore-path .gitignore"
   },
   "keywords": [],
   "author": "",

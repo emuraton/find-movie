@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import env from '../../../env'
+import env from '../../../env.json'
 
 require('./LayoutGrid.css')
 
@@ -17,7 +17,7 @@ export default class LayoutGrid extends Component {
         element.poster_path ?
           <div className="LayoutGrid-cell" key={element.id}>
             <a href="#">
-              <img src={`${env.IMG_URL}/w300${element.poster_path}`}></img>
+              <img src={`${env.IMG_URL}/w300${element.poster_path}`} alt="Movie" />
             </a>
           </div> :
         null
@@ -27,7 +27,7 @@ export default class LayoutGrid extends Component {
 
   render() {
     const { data } = this.props
-    if(data.length === 0 || data.results === 0) return null
+    if (data.length === 0 || data.results === 0) return null
     return (
       <div className="LayoutGrid">
         {this.getChildElements()}

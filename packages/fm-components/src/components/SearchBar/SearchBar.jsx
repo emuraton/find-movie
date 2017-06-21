@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
 import searchImg from './images/search-icon.svg'
 require('./SearchBar.css')
 
@@ -16,7 +15,6 @@ export default class SearchBar extends Component {
 
   onSubmit = (e) => {
     e.preventDefault()
-    console.log('hey', this.state)
     this.props.onSubmit(this.state.name)
   }
 
@@ -31,7 +29,8 @@ export default class SearchBar extends Component {
           </div>
           <input
             className="SearchBar-input"
-            type="text" name="name"
+            type="text"
+            name="name"
             placeholder="Search for a movie, tv show, person..."
             onChange={this.onChange}
           />

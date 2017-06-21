@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import iconImg from './images/icon-header.png'
 
 require('./Header.css')
 
-export default (props) => {
+export default () => {
   return (
     <header className="Header">
       <div className="Header-content">
