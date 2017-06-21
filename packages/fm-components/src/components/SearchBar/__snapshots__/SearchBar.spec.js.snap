@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchBar /> @renders in default state 1`] = `
+<div
+  className="SearchBar"
+>
+  <form
+    className="SearchBar-form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="SearchBar-iconParent"
+    >
+      <button
+        className="SearchBar-button"
+        onClick={[Function]}
+      >
+        <img
+          alt="Search"
+          className="SearchBar-icon"
+          src={
+            Object {
+              "process": [Function],
+            }
+          }
+        />
+      </button>
+    </div>
+    <input
+      className="SearchBar-input"
+      placeholder="Search for a movie, tv show, person..."
+      type="text"
+    />
+  </form>
+</div>
+`;
