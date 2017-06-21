@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchView /> @renders in default state 1`] = `
+<section
+  className="SearchView"
+>
+  <SearchBarMocked
+    onSubmit={[Function]}
+  />
+  <LayoutGridMocked
+    data={Array []}
+  />
+</section>
+`;
