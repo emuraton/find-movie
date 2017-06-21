@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack --progress --color --config build/dev-webpack",
     "dev": "node build/devServer.js",
-    "lerna:install": "lerna bootstrap && lerna build",
+    "postinstall": "lerna bootstrap && lerna build",
     "publish": "lerna publish",
     "lint": "eslint ./packages/**/*.jsx --ignore-path .gitignore"
   },
