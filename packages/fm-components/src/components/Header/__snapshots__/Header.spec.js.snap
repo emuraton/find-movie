@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> @renders in default state 1`] = `
+<header
+  className="Header"
+>
+  <div
+    className="Header-content"
+  >
+    <img
+      alt="icon-movie-db"
+      src={
+        Object {
+          "process": [Function],
+        }
+      }
+    />
+    <span
+      className="Header-content-span"
+    >
+      Find your movie
+    </span>
+  </div>
+</header>
+`;
