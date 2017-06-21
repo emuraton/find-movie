@@ -3,5 +3,6 @@
 exports[`<Main /> @renders in default state 1`] = `
 <div>
   <HeaderMocked />
+  <SearchView />
 </div>
 `;

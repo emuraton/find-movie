@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Header , SearchBar} from 'fm-components'
+import { Header } from 'fm-components'
+import SearchView from '../SearchView/SearchView'
 
 
 export default class Main extends Component {
@@ -11,6 +12,7 @@ export default class Main extends Component {
     return (
       <div>
         <Header/>
+        <SearchView/>
       </div>
     )
   }
