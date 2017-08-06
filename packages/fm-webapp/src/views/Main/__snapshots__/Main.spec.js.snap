@@ -1,8 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Main /> @renders in default state 1`] = `
-<div>
-  <HeaderMocked />
-  <SearchView />
-</div>
+<BrowserRouter>
+  <div>
+    <Route
+      component="HeaderMocked"
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/movie"
+    />
+  </div>
+</BrowserRouter>
 `;

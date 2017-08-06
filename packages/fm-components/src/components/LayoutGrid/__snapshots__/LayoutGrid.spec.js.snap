@@ -7,81 +7,61 @@ exports[`<LayoutGrid /> @renders in default state 1`] = `
   <div
     className="LayoutGrid-cell"
   >
-    <a
-      href="#"
+    <Link
+      replace={false}
+      to={
+        Object {
+          "pathname": "/movie",
+        }
+      }
     >
       <img
         alt="Movie"
-        src="https://image.tmdb.org/t/p/w300myPath1"
+        height="271"
+        src="https://image.tmdb.org/t/p/w185myPath1"
+        width="182"
       />
-    </a>
+    </Link>
   </div>
   <div
     className="LayoutGrid-cell"
   >
-    <a
-      href="#"
+    <Link
+      replace={false}
+      to={
+        Object {
+          "pathname": "/movie",
+        }
+      }
     >
       <img
         alt="Movie"
-        src="https://image.tmdb.org/t/p/w300myPath2"
+        height="271"
+        src="https://image.tmdb.org/t/p/w185myPath2"
+        width="182"
       />
-    </a>
+    </Link>
   </div>
   <div
     className="LayoutGrid-cell"
   >
-    <a
-      href="#"
+    <Link
+      replace={false}
+      to={
+        Object {
+          "pathname": "/movie",
+        }
+      }
     >
       <img
         alt="Movie"
-        src="https://image.tmdb.org/t/p/w300myPath3"
+        height="271"
+        src="https://image.tmdb.org/t/p/w185myPath3"
+        width="182"
       />
-    </a>
+    </Link>
   </div>
 </div>
 `;
 
-exports[`<LayoutGrid /> @renders with empty data 1`] = `
-<div
-  className="LayoutGrid"
->
-  <div
-    className="LayoutGrid-cell"
-  >
-    <a
-      href="#"
-    >
-      <img
-        alt="Movie"
-        src="https://image.tmdb.org/t/p/w300myPath1"
-      />
-    </a>
-  </div>
-  <div
-    className="LayoutGrid-cell"
-  >
-    <a
-      href="#"
-    >
-      <img
-        alt="Movie"
-        src="https://image.tmdb.org/t/p/w300myPath2"
-      />
-    </a>
-  </div>
-  <div
-    className="LayoutGrid-cell"
-  >
-    <a
-      href="#"
-    >
-      <img
-        alt="Movie"
-        src="https://image.tmdb.org/t/p/w300myPath3"
-      />
-    </a>
-  </div>
-</div>
-`;
+exports[`<LayoutGrid /> @renders with empty data 1`] = `null`;

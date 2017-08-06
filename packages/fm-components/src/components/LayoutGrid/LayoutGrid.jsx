@@ -13,9 +13,14 @@ export default class LayoutGrid extends Component {
       return (
         element.poster_path ?
           <div className="LayoutGrid-cell" key={element.id}>
-            <a href="#">
-              <img src={`${env.IMG_URL}/w300${element.poster_path}`} alt="Movie" />
-            </a>
+            <Link to={{ pathname: '/movie' }}>
+              <img
+                src={`${env.IMG_URL}/w185${element.poster_path}`}
+                alt="Movie"
+                width="182"
+                height="271"
+              />
+            </Link>
           </div> :
         null
       )
