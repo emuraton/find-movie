@@ -11,8 +11,8 @@ export default class SearchView extends Component {
 
   callSearch = (query) => {
     request
-      .get(`${env.API_URL}${env.ENDPOINT_MULTI}`)
-      .query({ api_key: env.API_KEY, query })
+      .get(`${env.API_URL}${env.ENDPOINT_SEARCH_MOVIE}`)
+      .query({ api_key: env.API_KEY, query, page: 1 })
       .then(({ body }) => {
         this.setState({ data: body })
       })

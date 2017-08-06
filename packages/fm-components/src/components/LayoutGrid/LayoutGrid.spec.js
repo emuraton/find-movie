@@ -37,7 +37,7 @@ describe('<LayoutGrid />', () => {
         ...initialProps,
         data: []
       }
-      const wrapper = shallow(<LayoutGrid {...initialProps} />)
+      const wrapper = shallow(<LayoutGrid {...props} />)
       expect(toJson(wrapper))
         .toMatchSnapshot()
     })

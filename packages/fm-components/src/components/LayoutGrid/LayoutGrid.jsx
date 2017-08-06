@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import env from '../../../env.json'
 
 require('./LayoutGrid.css')
 
 export default class LayoutGrid extends Component {
-  constructor(props) {
-    super(props)
-    this.grid = null
-  }
 
   getChildElements = () => {
     const { data } = this.props
