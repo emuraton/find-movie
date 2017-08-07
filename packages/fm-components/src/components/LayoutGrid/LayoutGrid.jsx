@@ -13,7 +13,7 @@ export default class LayoutGrid extends Component {
       return (
         element.poster_path ?
           <div className="LayoutGrid-cell" key={element.id}>
-            <Link to={{ pathname: '/movie' }}>
+            <Link to={{ pathname: '/movie', search: `?id=${element.id}` }}>
               <img
                 src={`${env.IMG_URL}/w185${element.poster_path}`}
                 alt="Movie"

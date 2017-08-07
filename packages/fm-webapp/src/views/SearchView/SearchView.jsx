@@ -14,7 +14,7 @@ class SearchView extends Component {
   callSearch = (query) => {
     const { dispatch } = this.props
     request
-      .get(`${env.API_URL}${env.ENDPOINT_SEARCH_MOVIE}`)
+      .get(`${env.API_URL}${env.ENDPOINT_SEARCH_MOVIES}`)
       .query({ api_key: env.API_KEY, query, page: 1 })
       .then(({ body }) => {
         dispatch(setMovies(body.results))

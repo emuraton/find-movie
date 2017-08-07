@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MovieDetails /> @renders in default state 1`] = `null`;
+
+exports[`<MovieDetails /> @renders in with movies state 1`] = `null`;
