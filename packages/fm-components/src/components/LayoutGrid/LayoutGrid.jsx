@@ -9,7 +9,7 @@ export default class LayoutGrid extends Component {
 
   getChildElements = () => {
     const { data } = this.props
-    return data.results.map((element) => {
+    return Object.values(data).map((element) => {
       return (
         element.poster_path ?
           <div className="LayoutGrid-cell" key={element.id}>
@@ -28,8 +28,8 @@ export default class LayoutGrid extends Component {
   }
 
   render() {
+    if (!this.props.data) return null
     const { data } = this.props
-    if (data.length === 0 || data.results === 0) return null
     return (
       <div className="LayoutGrid">
         {this.getChildElements()}
@@ -39,9 +39,9 @@ export default class LayoutGrid extends Component {
 }
 
 LayoutGrid.PropTypes = {
-  data: PropTypes.array.isRequired
+  data: PropTypes.array.isRequired,
 }
 
 LayoutGrid.defaultProps = {
-  data: []
+  data: {}
 }

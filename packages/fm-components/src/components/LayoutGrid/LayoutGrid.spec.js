@@ -7,21 +7,18 @@ describe('<LayoutGrid />', () => {
 
   const initialProps = {
     data: {
-      results:
-      [
-        {
-          id: '1',
-          poster_path: 'myPath1'
-        },
-        {
-          id: '2',
-          poster_path: 'myPath2'
-        },
-        {
-          id: '3',
-          poster_path: 'myPath3'
-        }
-      ]
+      1: {
+        id: '1',
+        poster_path: 'myPath1'
+      },
+      2: {
+        id: '2',
+        poster_path: 'myPath2'
+      },
+      3: {
+        id: '3',
+        poster_path: 'myPath3'
+      }
     }
   }
 
@@ -35,7 +32,7 @@ describe('<LayoutGrid />', () => {
     it('with empty data', () => {
       const props = {
         ...initialProps,
-        data: []
+        data: {}
       }
       const wrapper = shallow(<LayoutGrid {...props} />)
       expect(toJson(wrapper))

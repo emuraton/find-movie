@@ -1,33 +1,45 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 import request from 'superagent'
 import { SearchBar, LayoutGrid } from 'fm-components'
 import env from '../../../env.json'
+import { setMovies } from '../../actions/moviesAction'
 
-export default class SearchView extends Component {
+class SearchView extends Component {
   constructor(props) {
     super(props)
-    this.state = { data: [] }
   }
 
   callSearch = (query) => {
+    const { dispatch } = this.props
     request
       .get(`${env.API_URL}${env.ENDPOINT_SEARCH_MOVIE}`)
       .query({ api_key: env.API_KEY, query, page: 1 })
       .then(({ body }) => {
-        this.setState({ data: body })
+        dispatch(setMovies(body.results))
       })
-      .catch(() => {
+      .catch((e) => {
         // TODO Improve error management with a message error in the UI
-        this.setState({ data: [] })
+        dispatch(setMovies())
       })
   }
 
   render() {
+    const { movies } = this.props
     return (
       <section className="SearchView">
         <SearchBar onSubmit={this.callSearch} />
-        <LayoutGrid data={this.state.data} />
+        { movies ? <LayoutGrid data={movies} /> : null }
       </section>
     )
   }
 }
+
+SearchView.PropTypes = {
+  movies: PropTypes.object,
+}
+
+export default connect(
+  state => ({ movies: state.movies.list })
+)(SearchView)

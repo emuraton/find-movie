@@ -7,8 +7,23 @@ exports[`<SearchView /> @renders in default state 1`] = `
   <SearchBarMocked
     onSubmit={[Function]}
   />
+</section>
+`;
+
+exports[`<SearchView /> @renders in with movies state 1`] = `
+<section
+  className="SearchView"
+>
+  <SearchBarMocked
+    onSubmit={[Function]}
+  />
   <LayoutGridMocked
-    data={Array []}
+    data={
+      Object {
+        "1": Object {},
+        "2": Object {},
+      }
+    }
   />
 </section>
 `;
